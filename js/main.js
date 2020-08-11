@@ -1,4 +1,4 @@
-
+var flag = false;
 $(document).ready(function(){
 
     'use strict';
@@ -45,7 +45,26 @@ window.onscroll=function(){
         }
     }
 
-}
+    }
+    
+
+
+/*====================================
+    CLICK SOBRE NAVBAR DESPLEGABLE
+======================================*/
+    $('.navbar-toggler-icon').click(() => {
+            
+        const gradiente = { "background": "transparent"};;
+        const negro = { "background": "#000"};
+        if (flag) {
+            flag = false;
+            $('.navbar').css(gradiente);
+        }
+        else {
+            flag = true;
+            $('.navbar').css(negro);
+        }
+    });
 
 });
 

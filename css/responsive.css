@@ -69,10 +69,13 @@
         .header{
             /* background: transparent ; */
             background: rgb(0, 0, 0) !important;
+            background: linear-gradient(180deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0.87) 10%, rgba(0,0,0,0.85) 20%, rgba(0,0,0,0.75) 35%, rgba(0,0,0,0.55) 50%,rgba(0,0,0,0.39) 100%) !important;
+
         }
         /* cuadro del ul */
         .navbar-nav{
-            background: transparent !important;
+            background: rgb(0, 0, 0) !important;
+            /* background: transparent !important; */
             box-shadow: none !important;
         }        
         /* color transparente al boton del menu */
@@ -113,7 +116,12 @@
 
      
 }
+@media (max-width: 362px) {
+    #imagotipo{
+        max-height: 40px !important; 
+    }
 
+}
 
 @media (min-width:768px) and (max-width:992px){
     #positionCenter{

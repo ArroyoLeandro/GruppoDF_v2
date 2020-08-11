@@ -34,7 +34,7 @@
   --greenLight:#68B684;
   --blue:#094D92;
    --primary:#C97C08;
-   --terciario:#fff;
+   --terciario:#CEC8C7;
   /* originales */
   /* --primary:#e4b010; */
   /* --terciario:#05364d; */
@@ -199,16 +199,7 @@
      -o-transform: translateY(0%);
    }
  }
-.licitaciones{
-  background: var(--secondary) !important;
-  border-bottom: 2px solid var(--primary);
-}
-.licitaciones:hover{
-  background: var(--primary) !important;
-  border-bottom: 2px solid var(--secondary);
-  transition: all 0.4s ease-out;
 
-}
 .subastas > .badge-secondary{
 background: var(--primary) !important;
 font-size:18px;
@@ -238,7 +229,7 @@ padding: 8px;
     color:#fff !important;
   }
   .list-unstyled > .nav-item > .nav-link:hover{
-    color:var(--secondary) !important;
+    color:#000 !important;
     font-weight: bold;
   }
   
