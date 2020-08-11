@@ -33,7 +33,6 @@
   --green:#95E06C;
   --greenLight:#68B684;
   --blue:#094D92;
-  --blueLight:#27A8E1;
    --primary:#C97C08;
    --terciario:#fff;
   /* originales */
@@ -123,7 +122,8 @@
  .header .navbar-nav.menu_nav {
    width: 100%;
    margin-left: 140px;
- }
+ 
+  }
 
  .header .navbar.navbar-light .navbar-brand {
    font-size: 25px;
@@ -142,7 +142,7 @@
  .header .navbar #collapsibleNavbar .nav-item .nav-link {
    /* font-family: 'Roboto', sans-serif; */
    font-family: 'Raleway', sans-serif;
-   color: var(--secondary);
+   color: #fff;
    font-size: 13px;
    font-weight: 700;
    font-stretch: normal;
@@ -165,15 +165,16 @@
    color: var(--primary);
  }
 
+
  header{
-  background-color: #fff;
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%,rgba(0,0,0,0.87) 10%, rgba(0,0,0,0.85) 20%, rgba(0,0,0,0.75) 35%, rgba(0,0,0,0.55) 50%,rgba(0,0,0,0.39) 100%);
   position: fixed;
 
  }
 
+
  header.fixed {
-   background-color: #fff;
-   box-shadow: 0 3px 16px 0 rgba(0, 0, 0, .22);
    animation: fixHeader .5s ease;
    -webkit-animation: fixHeader .5s ease;
  }
@@ -212,7 +213,6 @@
 background: var(--primary) !important;
 font-size:18px;
 padding: 8px;
-border-bottom: 2px solid var(--secondary);
 }
 .subastas > .badge-secondary:hover{
     background: var(--secondary) !important;

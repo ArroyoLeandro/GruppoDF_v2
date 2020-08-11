@@ -44,11 +44,10 @@ window.onscroll=function(){
             document.querySelector("header").classList.remove("fixed")
         }
     }
+
 }
 
 });
-
-
 
 
   /*====================================

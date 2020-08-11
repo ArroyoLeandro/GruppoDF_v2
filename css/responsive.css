@@ -30,7 +30,7 @@
         height: 2px;
         width: 24px;
         position: relative;
-        background-color: var(--secondary);
+        background-color: var(--primary);
     }
     .header .navbar-light .navbar-toggler-icon::after,
     .header .navbar-light .navbar-toggler-icon::before {
@@ -40,7 +40,7 @@
         width: 100%;
         left: 0;
         top: -6px;
-        background-color: var(--secondary);
+        background-color: var(--primary);
     }
     .header .navbar-light .navbar-toggler-icon::after {
         top: 6px;
@@ -62,6 +62,24 @@
         #parallax2 > .section-title > p{
             font-size: .8em !important;
           }
+
+
+
+        /* color fondo del navbar */
+        .header{
+            /* background: transparent ; */
+            background: rgb(0, 0, 0) !important;
+        }
+        /* cuadro del ul */
+        .navbar-nav{
+            background: transparent !important;
+            box-shadow: none !important;
+        }        
+        /* color transparente al boton del menu */
+        header .navbar-light .navbar-toggler{
+            background: transparent !important;
+            box-shadow: none !important;
+        }
 }
 
 @media (max-width: 767px) {
@@ -92,6 +110,8 @@
       .buttonTitle{
           font-size: 24px !important;
       }
+
+     
 }
 
 
