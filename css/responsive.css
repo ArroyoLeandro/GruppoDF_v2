@@ -145,3 +145,13 @@
         margin: auto;
       }
 }
+
+
+
+/* retina display solucion */
+
+@media only screen and (min-device-pixel-ratio: 2) {
+    #homeContainer { 
+        background-image: url(../img/car300.jpg); 
+      }
+}
