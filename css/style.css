@@ -247,7 +247,6 @@ padding: 8px;
  #homeContainer { 
   background-image: url(../img/car.jpg);   
   text-align: center; 
-  transform: rotate(2deg);
   text-shadow: 1px 1px #fff;
   
 }

@@ -52,7 +52,9 @@ window.onscroll=function(){
 /*====================================
     CLICK SOBRE NAVBAR DESPLEGABLE
 ======================================*/
-    $('.navbar-toggler-icon').click(() => {
+
+
+    $('.navbar-toggler').click(() => {
             
         const gradiente = { "background": "transparent"};;
         const negro = { "background": "#000"};
