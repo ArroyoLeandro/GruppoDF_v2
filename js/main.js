@@ -52,8 +52,6 @@ window.onscroll=function(){
 /*====================================
     CLICK SOBRE NAVBAR DESPLEGABLE
 ======================================*/
-
-
     $('.navbar-toggler').click(() => {
             
         const gradiente = { "background": "transparent"};;
