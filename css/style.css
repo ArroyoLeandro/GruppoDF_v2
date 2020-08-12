@@ -268,6 +268,9 @@ padding: 8px;
   transform: rotate(-2deg);
 }
 
+.fas{
+  color: var(--primary) !important;
+}
 
 
  .home-section .block .circle img {
@@ -372,6 +375,201 @@ padding: 8px;
  }
 
  /* Services Section */
+
+
+
+ .selector {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 140px;
+  height: 140px;
+  margin-top: -70px;
+  margin-left: -70px;
+}
+
+.selector,
+.selector button {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+}
+
+.selector button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: #C97C08;
+  border-radius: 50%;
+  border: 0;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  transition: all .1s;
+}
+
+.selector button:hover { background: #c78420; }
+
+.selector button:focus { outline: none; }
+
+/* tamaño separacion */
+.selector ul {
+  position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: -100px;
+    right: -100px;
+    bottom: -100px;
+    left: -100px;
+}
+
+.selector li {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  margin: 0 50%;
+  transform: rotate(-360deg);
+  transition: all 0.8s ease-in-out;
+}
+
+.selector li input { display: none; }
+
+.selector li input + label {
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  line-height: 1px;
+  margin-left: 0;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.8s ease-in-out, color 0.1s, background 0.1s;
+}
+
+
+/* separaciones */
+.selector.open li input + label {
+    width: 105px;
+    height: 105px;
+    line-height: 100px;
+    margin-left: -40px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.labelServices{
+  color:#83736F;
+  padding-top: 10px;
+  font-size: 15px;
+}
+.icon > i {
+    color:#83736F;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+
+/* INICIO SERVICIOS CIRCULARES FUNCIONAL 600PX PARA ARRIBA*/
+
+.c2{
+    transform: rotate(-14deg);
+}
+.c3{
+  transform: rotate(-48deg);
+  padding: 10px;
+}
+.c4{
+  margin: 18px;
+  transform: rotate(-48deg);
+}
+.c5{
+  transform: rotate(-65deg);
+  margin: 18px;
+}
+.c6{
+  transform: rotate(-82deg);
+}
+.c7{
+  transform: rotate(-98deg);
+}
+.c8{
+  transform: rotate(-115deg);
+}
+.c9{
+  transform: rotate(-132deg);
+  margin-top: -5px;
+}
+.c10{
+  transform: rotate(-148deg);
+  margin-left: 8px;
+}
+.c11{
+  transform: rotate(-165deg);
+}
+
+.c1 > .labelServices{
+  font-size: 14px;
+}
+
+.c2 > .labelServices{
+  transform: rotate(-2deg) !important;
+  font-size: 13px;
+}
+.c3 > .labelServices{
+  transform: rotate(15deg) !important;
+  font-size: 12px;
+  margin-left: -16px;
+}
+.c4 > .labelServices{
+  transform: rotate(-1deg) !important;
+  font-size: 14px;
+
+}
+.c5 > .labelServices{
+  transform: rotate(0deg) !important;
+  font-size: 14px;
+}
+.c6 > .labelServices{
+  transform: rotate(0deg) !important;
+  font-size: 13px;
+  padding: 10px;
+}
+.c7 > .labelServices{
+  transform: rotate(0deg) !important;
+  font-size: 14px;
+  padding: 12px;
+}
+.c8 > .labelServices{
+  transform: rotate(0deg) !important;
+  font-size: 14px;
+  padding: 12px;
+}
+.c9 > .labelServices{
+  transform: rotate(1deg) !important;
+  font-size: 13px;
+  padding: 14px;
+}
+.c10 > .labelServices{
+  transform: rotate(0deg) !important;
+  font-size: 14px;
+  padding: 12px;
+}
+.c11 > .labelServices{
+  transform: rotate(1deg) !important;
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+
+/* FIN SERVICIOS CIRCULARES */
+
  .services-section .services-item {
   position: relative;
   padding-left:200px;
@@ -395,6 +593,7 @@ padding: 8px;
 }
 
 .services-section .services-item .icon i {
+  padding-top:0;
   line-height: 50px;
   font-size: 20px;
   color: var(--primary);
