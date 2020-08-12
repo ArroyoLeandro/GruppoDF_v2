@@ -512,6 +512,8 @@ padding: 8px;
 }
 .c11{
   transform: rotate(-165deg);
+  display:flex !important;
+  flex-direction: column;
 }
 
 .c1 > .labelServices{

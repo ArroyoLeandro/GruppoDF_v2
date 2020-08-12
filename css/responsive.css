@@ -91,6 +91,12 @@
         line-height: 44px;
     }
 
+    .list-unstyled{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 575px) {
