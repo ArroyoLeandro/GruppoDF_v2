@@ -81,9 +81,9 @@ function rotate(li,d) {
     $({d:angleStart}).animate({d:d}, {
         step: function(now) {
             $(li)
-               .css({ transform: 'rotate('+now+'deg)' })
-               .find('label')
-                  .css({ transform: 'rotate('+(-now/2)+'deg)' });
+                .css({ transform: 'rotate(' + now + 'deg)' })
+                .find('label')
+                .css({ transform: 'rotate(' + (-now / 2) + 'deg)'});
         }, duration: 0
     });
 }
@@ -97,6 +97,8 @@ function toggleOptions(s) {
         var d = $(s).hasClass('half') ? (i*deg)-90 : i*deg;
         $(s).hasClass('open') ? rotate(li[i],d) : rotate(li[i],angleStart);
     }
+
+
 }
 
 //si activo esta funcion el user puede cerrar y abrir los circulos
@@ -104,7 +106,7 @@ $('.selector button').click(function(e) {
     toggleOptions($(this).parent());
 });
 
-setTimeout(function() { toggleOptions('.selector'); }, 100);
+setTimeout(function() { toggleOptions('.selector');  }, 100);
 
 
 
