@@ -60,7 +60,7 @@
             padding: 3vh !important;
         }
         #parallax2 > .section-title > p{
-            font-size: .8em !important;
+            font-size: 1.2em !important;
           }
 
 
@@ -83,6 +83,15 @@
             background: transparent !important;
             box-shadow: none !important;
         }
+
+        .back-to-top {
+            position: fixed;
+            display: inline;
+            right: 15px;
+            bottom: 15px;
+            z-index: 99999;
+            transition: 0.5s;
+          }
 }
 
 @media (max-width: 767px) {
@@ -107,8 +116,10 @@
       }
     .services-section .services-item .icon {
         left: 0;
-      }
-    .container {
+      
+    }
+
+     .container {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -119,9 +130,24 @@
       .buttonTitle{
           font-size: 24px !important;
       }
-
+      .copyright{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .social-links{
+        margin-left: -22%;
+      }
+   
      
 }
+
+@media (max-width:400px){
+    #parallax2 > .section-title > p{
+        font-size: .9em !important;
+      }
+}
+
 @media (max-width: 362px) {
     #imagotipo{
         max-height: 40px !important; 
