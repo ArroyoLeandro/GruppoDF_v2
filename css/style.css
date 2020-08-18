@@ -35,9 +35,7 @@
    /* font-family: 'Roboto', sans-serif; */
    font-family: 'Raleway', sans-serif;
    font-weight: 400;
-  /* background: var(--fondo); */
-  background: var(--terciario);
-  /* background: #c97c08; */
+   background: url(img/bg.svg) cover;
   overflow-x: hidden;
   }
 
@@ -390,259 +388,97 @@ padding: 8px;
 
  /* Services Section */
 
-
-
- .selector {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 140px;
-  height: 140px;
-  margin-top: -70px;
-  margin-left: -70px;
+.servicios{
+  background: url(../img/bg.svg);
+  background-size: cover; 
+  height: 120vh;
 }
 
-.selector,
-.selector button {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+.mt130px{
+	margin-top:130px !important;
 }
 
-.selector button {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  background: var(--primary);
-  border-radius: 50%;
-  border: 0;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: 0 3px 3px rgb(255, 255, 255);
-  transition: all .1s;
+.mt210px{
+	margin-top:210px !important;
 }
 
-
-
-.selector button:hover {
-   /* background: #c78420;  */
-  /* background: var(--secondary); */
+.mt280px{
+	margin-top:280px !important;
 }
 
-.selector button:focus { outline: none; }
-
-/* tamaño separacion */
-.selector ul {
-  position: absolute;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    top: -100px;
-    right: -100px;
-    bottom: -100px;
-    left: -100px;
+.mt-50px{
+	margin-top: -50px !important;
 }
 
-.selector li {
-  position: absolute;
-  width: 0;
-  height: 100%;
-  margin: 0 50%;
-  transform: rotate(-360deg);
-  transition: all 0.8s ease-in-out;
+.card{
+  height: 230px !important;
+  border-radius:5%;
 }
 
-.selector li input { display: none; }
-
-.selector li input + label {
-  position: absolute;
-  left: 50%;
-  bottom: 100%;
-  width: 0;
-  height: 0;
-  line-height: 1px;
-  margin-left: 0;
-  background: #fff;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 1px;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: none;
-  transition: all 0.8s ease-in-out, color 0.1s, background 0.1s;
+.card-img-top {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
-.selector li input + label:hover{
-  /* background: var(--secondary); */
-
-}
-
-
-/* separaciones */
-.selector.open li input + label {
-    width: 105px;
-    height: 105px;
-    line-height: 100px;
-    margin-left: -40px;
-    box-shadow: 0 3px 3px rgba(214, 210, 210, 0.685) !important;
-    font-size: 16px;
-}
-
-.labelServices{
-  color:#83736F;
-  /* color:#fff; */
+.card-body > h4{
+  font-family: 'Raleway', sans-serif;
   padding-top: 10px;
-  font-size: 15px;
-}
-.icon > i {
-    color:#83736F;
-    padding-top: 10px;
-    font-size: 30px;
 }
 
-
-/* INICIO SERVICIOS CIRCULARES FUNCIONAL 600PX PARA ARRIBA*/
-
-.c2{
-    transform: rotate(-14deg);
+.card-footer{
+  border: none !important;
+  background:transparent !important;
 }
 
-.c3{
-  transform: rotate(-48deg);
-  padding: 10px;
-}
-.c4{
-  margin: 18px;
-  transform: rotate(-48deg);
-}
-.c5{
-  transform: rotate(-65deg);
-  margin: 18px;
-}
-.c6{
-  transform: rotate(-82deg);
-}
-.c7{
-  transform: rotate(-98deg);
-}
-.c8{
-  transform: rotate(-115deg);
-}
-.c9{
-  transform: rotate(-132deg);
-  margin-top: -5px;
-}
-.c10{
-  transform: rotate(-148deg);
-  margin-left: 8px;
-}
-.c11{
-  transform: rotate(-165deg);
-  display:flex !important;
-  flex-direction: column;
+.card-footer > h4{
+  color:#C97C08;
 }
 
-.c1 > .labelServices{
-  font-size: 14px;
+/* FIN SERVICES */
+
+
+
+ /* Contact Section */
+ .contact-section {
+  padding: 120px 0px 0px;
+  background-image: url(../img/bg.svg);
+  
 }
 
-.c2 > .labelServices{
-  transform: rotate(-2deg) !important;
-  font-size: 13px;
-}
-.c3 > .labelServices{
-  transform: rotate(15deg) !important;
-  font-size: 12px;
-  margin-left: -16px;
-}
-.c4 > .labelServices{
-  transform: rotate(-1deg) !important;
-  font-size: 14px;
+.contact-section .contact-form .form-group {
+  margin-bottom: 20px;
 
 }
-.c5 > .labelServices{
-  transform: rotate(0deg) !important;
-  font-size: 14px;
-}
-.c6 > .labelServices{
-  transform: rotate(0deg) !important;
-  font-size: 13px;
-  padding: 10px;
-}
-.c7 > .labelServices{
-  transform: rotate(0deg) !important;
-  font-size: 14px;
-  padding: 12px;
-}
-.c8 > .labelServices{
-  transform: rotate(0deg) !important;
-  font-size: 14px;
-  padding: 12px;
-}
-.c9 > .labelServices{
-  transform: rotate(1deg) !important;
-  font-size: 13px;
-  padding: 14px;
-}
-.c10 > .labelServices{
-  transform: rotate(0deg) !important;
-  font-size: 14px;
-  padding: 12px;
-}
-.c11 > .labelServices{
-  transform: rotate(1deg) !important;
-  font-size: 14px;
-  padding-bottom: 30px;
-}
 
-/* FIN SERVICIOS CIRCULARES */
-
- .services-section .services-item {
-  position: relative;
-  padding-left:200px;
-  margin-bottom: 30px;
-  text-align: left;
-}
-
-.services-section .services-item .icon {
+.contact-section .contact-form .form-control {
   height: 50px;
-  width: 50px;
-  background-color: #e1e1ee;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  text-align: center;
-  position: absolute;
-  left: 25%;
-  top: 0;
-}
-
-.services-section .services-item .icon i {
-  padding-top:0;
-  line-height: 50px;
-  font-size: 20px;
-  color: var(--primary);
-}
-
-.services-section .services-item h5 {
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 26px;
-  padding-top: 12px;
-  color: #82726E;
-}
-
-
-/* .services-section .services-item p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 26px;
   color: #555555;
-  margin: 0;
-} */
+  border: none;
+  border-bottom: 1px solid var(--primary);
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+.contact-section .contact-form textarea.form-control {
+  height: 120px;
+}
+
+.contact-section .contact-form .form-control:focus {
+  box-shadow: none;
+  border-color: var(--primary);
+}
+
+
 
 /* parallax Separate section */
 #parallax1{
@@ -656,7 +492,7 @@ padding: 8px;
 }
 #parallax2{
   position: relative;
-  background-image: url(../img/bg.jpg);
+  background-image: url(../img/parallax2.jpg);
   height: 32vh;
 }
 #parallax2:before {
