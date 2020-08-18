@@ -129,7 +129,9 @@ $(function () {
 
         if (esVisible(nosotrosHead))$('#nosotrosHead').addClass('animate__backInLeft');
         if (esVisible(nosotrosContent))$('#nosotrosContent').addClass('animate__backInLeft');
-        if (esVisible(servicio))$('#servicio').addClass('animate__jackInTheBox');
+        // if (esVisible(servicio)) $('#servicio').addClass('animate__jackInTheBox');
+        if (esVisible(servicio)) $('.rowsAnim').addClass('animate__pulse');
+
     });
     
     
