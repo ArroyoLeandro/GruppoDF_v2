@@ -95,6 +95,34 @@
    clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%)
  }
 
+ .services-section .section-title .title::before {
+  color: var(--primary);
+  clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%);
+  text-shadow: 1px -2px #fff;
+  /* background:#fff; */
+
+}
+.services-section .section-title .title::after {
+  color: var(--primary);
+  clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 56%);
+  text-shadow: 1px -2px #fff;
+  /* background:#fff; */
+
+}
+
+/* .soluciones{
+  background:#fff;
+  margin-left:25% !important;
+  width:50%;
+} */
+
+/* style="  text-shadow: 1px 2px #fff;" */
+
+
+
+
+
+
  .home-section .title::after,
  .section-title .title::after {
    color: var(--primary);
