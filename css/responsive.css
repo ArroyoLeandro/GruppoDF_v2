@@ -124,6 +124,8 @@
         margin-bottom: 50px;
     }
 
+    
+
 }
 
 @media (max-width: 575px) {
@@ -160,12 +162,37 @@
       .card-footer > h4{
         font-size: 1rem !important;
     }
+
+    .section-title .title{
+        font-size:2rem !important;
+    }
+    .section-title .subtitle{
+        font-size: 1.1rem !important;
+        line-height: 25px;
+    }
+
+    .contact-section{
+        padding:0 !important;
+    }
+    .credits{
+        padding-left: 70px;
+      }
+
+    .card-img-top{
+        width: 36% !important;
+        height: auto !important;
+    }
 }
 
 @media (max-width:400px){
     #parallax2 > .section-title > p{
         font-size: .9em !important;
       }
+
+      .card-img-top{
+        width: 50% !important;
+        height: auto !important;
+    }
 }
 
 @media (max-width: 362px) {
@@ -192,6 +219,12 @@
       }
 }
 
+@media (min-width:576px) and (max-width:768px){
+    .card-img-top{
+        width: 130px !important;
+        height: 130px !important;
+    }
+}
 
 
 /* retina display solucion */
