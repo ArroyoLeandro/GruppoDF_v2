@@ -287,7 +287,7 @@ padding: 8px;
   background-size: cover;
 }
  #homeContainer { 
-  background-image: url(../img/car.png);   
+  background-image: url(../img/cartr.png);   
   text-align: center; 
   text-shadow: 1px 1px #fff;
   
@@ -508,12 +508,13 @@ padding: 8px;
 
 /* parallax Separate section */
 #parallax1{
-  background-image: url(../img/car1.jpg);
+  background-image: url(../img/bg-dark2.jpg) ;
   height: 25vh;
+
 }
 
 #parallax1 > .section-title > h1{
-  text-shadow: 1px 2px #999;
+  text-shadow: 1px -2px #fff;
   margin-top: 10vh ;
 }
 #parallax2{
@@ -541,11 +542,11 @@ padding: 8px;
   font-size: 1.4em;
 }
 .parallax > .section-title > .title::before{
-  color: #fff;
+  color: var(--primary);
   clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 0 60%)
 }
 .parallax > .section-title > .title::after {
- color: #fff;
+ color: var(--primary);
  clip-path: polygon(0 0, 100% 0%, 100% 36%, 0 56%);
 }
 
